@@ -78,8 +78,8 @@ function draw (x0, y0, v_0, a_0, K, g, m, color) {
   var v = Object.assign({}, v_0);
   var a = Object.assign({}, a_0);
 
-  ctx.moveTo(scale * xs[0], -scale * ys[0]);
   ctx.beginPath();
+  ctx.moveTo(scale * xs[0], -scale * ys[0]);
 
   while (i < 1000
          && scale * last(xs) < coordinatesystem.width
