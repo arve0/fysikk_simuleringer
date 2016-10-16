@@ -100,7 +100,7 @@ function draw (x0, y0, v_0, a_0, K, g, m, color) {
       ctx.font = '16px arial';
       var xx = x*scale;
       var yy = -y*scale + (color === '#000000' ? 0 : -20);
-      ctx.strokeText(`a=[${a.x.toFixed(2)}, ${a.y.toFixed(2)}]  v=[${v.x.toFixed(2)},${v.y.toFixed(2)}]`, xx, yy);
+      ctx.strokeText(`a=[${a.x.toFixed(1)}, ${a.y.toFixed(1)}]  v=[${v.x.toFixed(1)}, ${v.y.toFixed(1)}]`, xx, yy);
     }
 
     ctx.lineTo(scale * last(xs), -scale * last(ys));
