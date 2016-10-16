@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=UTF-8>
+  <title>Simulering - Kast med luftmotstand</title>
+  <link rel=stylesheet href=stil.css>
+</head>
+<body>
+  <form id=parameters>
+    <label>x_0 [m]
+      <input type=number min=-10 max=10 step=0.1 name=x_0 value=0>
+    </label>
+    <label>y_0 [m]
+      <input type=number min=-10 max=10 step=0.1 name=y_0 value=0>
+    </label>
+    <label>startfart |m/s]
+      <input type=number min=0 max=20 step=0.1 name=v_0 value=9>
+    </label>
+    <label>vinkel [deg]
+      <input type=number min=0 max=90 step=0.1 name=angle value=45>
+    </label><br>
+    <label>masse [kg]
+      <input type=number min=0 max=1000 step=0.1 name=mass value=3>
+    </label>
+    <label>gravitasjon [m/s^2]
+      <input type=number min=-10 max=0 step=0.1 name=gravity value=-9.81>
+    </label><br>
+    <label>luftmotstand [kg/m]
+      <input type=number min=-10 max=10 step=0.1 step=0.1 name=drag value=0.1>
+    </label>
+    <label>luftmotstand x [kg/m]
+      <input type=number min=-10 max=10 step=0.1 step=0.1 name=drag_x value=0.1>
+    </label>
+    <label>luftmotstand y [kg/m]
+      <input type=number min=-10 max=10 step=0.1 step=0.1 name=drag_y value=0.1>
+    </label><br>
+  </form>
+  <canvas id=koordinatsystem></canvas>
+  <script src=kast.js></script>
+</body>
+</html>
